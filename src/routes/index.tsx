@@ -14,6 +14,7 @@ import { DistributorSection } from "@/components/DistributorSection";
 import { CatalogueSection } from "@/components/CatalogueSection";
 import { DealerBenefitsSection } from "@/components/DealerBenefitsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import JourneySection from "@/components/JourneySection";
 
 
 export const Route = createFileRoute("/")({
@@ -41,6 +42,7 @@ function Index() {
       <Hero />
       <About />
       <Products />
+      <JourneySection />
       <BulkOrder />
       <ExportSection />
       {/* <DistributorSection /> */}
