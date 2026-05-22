@@ -8,6 +8,8 @@ import { ExportSection } from "@/components/Export";
 import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { OffersPopup } from "@/components/OffersPopup";
+import { ProcessPopup } from "@/components/ProcessPopup";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,7 +31,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="bg-cream text-foreground overflow-x-hidden">
+    <main className="bg-cream text-foreground overflow-x-hidden font-display">
       <Navbar />
       <Hero />
       <About />
@@ -39,6 +41,8 @@ function Index() {
       <Blog />
       <Contact />
       <Footer />
+      <OffersPopup />
+      <ProcessPopup />
     </main>
   );
 }
