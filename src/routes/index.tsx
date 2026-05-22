@@ -10,6 +10,11 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { OffersPopup } from "@/components/OffersPopup";
 import { ProcessPopup } from "@/components/ProcessPopup";
+import { DistributorSection } from "@/components/DistributorSection";
+import { CatalogueSection } from "@/components/CatalogueSection";
+import { DealerBenefitsSection } from "@/components/DealerBenefitsSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,6 +43,10 @@ function Index() {
       <Products />
       <BulkOrder />
       <ExportSection />
+      {/* <DistributorSection /> */}
+      {/* <CatalogueSection /> */}
+      <DealerBenefitsSection />
+      <TestimonialsSection />
       <Blog />
       <Contact />
       <Footer />
