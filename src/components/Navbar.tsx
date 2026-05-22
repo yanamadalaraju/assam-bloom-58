@@ -14,11 +14,24 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<string>("");
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40);
+
+      // scroll-spy: find section closest to top
+      let current = "";
+      for (const l of links) {
+        const el = document.querySelector(l.href);
+        if (!el) continue;
+        const rect = (el as HTMLElement).getBoundingClientRect();
+        if (rect.top <= 140) current = l.href;
+      }
+      setActive(current);
+    };
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -27,7 +40,7 @@ export function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 font-display transition-all duration-500 ${
         scrolled ? "py-3 bg-forest-deep/85 backdrop-blur-xl border-b border-gold/15" : "py-6 bg-transparent"
       }`}
     >
@@ -40,20 +53,32 @@ export function Navbar() {
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm uppercase tracking-[0.18em] text-cream/80 hover:text-gold transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) => {
+            const isActive = active === l.href;
+            return (
+              <a
+                key={l.href}
+                href={l.href}
+                className={`relative font-display text-sm uppercase tracking-[0.22em] transition-colors ${
+                  isActive ? "text-gold" : "text-cream/80 hover:text-gold"
+                }`}
+              >
+                {l.label}
+                {isActive && (
+                  <motion.span
+                    layoutId="nav-underline"
+                    className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-gold"
+                    transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                  />
+                )}
+              </a>
+            );
+          })}
         </nav>
 
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center rounded-full border border-gold/60 px-5 py-2 text-sm uppercase tracking-widest text-gold hover:bg-gold hover:text-forest-deep transition-all"
+          className="hidden md:inline-flex items-center rounded-full border border-gold/60 px-5 py-2 font-display text-sm uppercase tracking-widest text-gold hover:bg-gold hover:text-forest-deep transition-all"
         >
           Get Quote
         </a>
@@ -71,7 +96,9 @@ export function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm uppercase tracking-widest text-cream/80 hover:text-gold"
+                className={`font-display text-sm uppercase tracking-widest transition-colors ${
+                  active === l.href ? "text-gold" : "text-cream/80 hover:text-gold"
+                }`}
               >
                 {l.label}
               </a>
