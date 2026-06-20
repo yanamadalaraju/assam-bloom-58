@@ -7,7 +7,7 @@
 //     icon: Award, 
 //     title: "Export Quality Standards", 
 //     shortText: "Every consignment passes rigorous benchmarks.",
-//     text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control team performs over 50+ checks including taste, aroma, color, and moisture content.",
+//     text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control Team performs over 50+ checks including taste, aroma, color, and moisture content.",
 //     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800&h=600&fit=crop",
 //     stats: "99.9% Quality Score",
 //     certifications: ["ISO 22000", "HACCP", "BRCGS"]
@@ -25,7 +25,7 @@
 //     icon: Sprout, 
 //     title: "Fresh Garden-Sourced", 
 //     shortText: "Leaves picked and processed fresh.",
-//     text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium tea estates ensure freshness within 24 hours of plucking.",
+//     text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium Tea estates ensure freshness within 24 hours of plucking.",
 //     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800&h=600&fit=crop",
 //     stats: "Fresh within 24hrs",
 //     certifications: ["Organic", "Rainforest", "Fair Trade"]
@@ -275,7 +275,7 @@
 //     icon: Award, 
 //     title: "Export Quality Standards", 
 //     shortText: "Every consignment passes rigorous benchmarks.",
-//     text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control team performs over 50+ checks including taste, aroma, color, and moisture content.",
+//     text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control Team performs over 50+ checks including taste, aroma, color, and moisture content.",
 //     image: exportQualityImg,
 //     stats: "99.9% Quality Score",
 //     certifications: ["ISO 22000", "HACCP", "BRCGS"]
@@ -293,7 +293,7 @@
 //     icon: Sprout, 
 //     title: "Fresh Garden-Sourced", 
 //     shortText: "Leaves picked and processed fresh.",
-//     text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium tea estates ensure freshness within 24 hours of plucking.",
+//     text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium Tea estates ensure freshness within 24 hours of plucking.",
 //     image: freshGardenImg,
 //     stats: "Fresh within 24hrs",
 //     certifications: ["Organic", "Rainforest", "Fair Trade"]
@@ -545,7 +545,7 @@ const features = [
     icon: Award, 
     title: "Export Quality Standards", 
     shortText: "Every consignment passes rigorous benchmarks.",
-    text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control team performs over 50+ checks including taste, aroma, color, and moisture content.",
+    text: "Every consignment passes rigorous benchmarks before it leaves the warehouse. Our quality control Team performs over 50+ checks including taste, aroma, color, and moisture content.",
     image: exportQualityImg,
     stats: "99.9% Quality Score",
     certifications: ["ISO 22000", "HACCP", "BRCGS"]
@@ -557,15 +557,15 @@ const features = [
     text: "Fully certified and compliant with food safety regulations. We maintain strict adherence to FSSAI guidelines with regular audits and certifications.",
     image: fssaiImg,
     stats: "100% Compliant",
-    certifications: ["FSSAI", "ISO 22000", "GMP"]
+    certifications: ["FSSAI", "ISO 22000",]
   },
   { 
     icon: Sprout, 
     title: "Fresh Garden-Sourced", 
     shortText: "Leaves picked and processed fresh.",
-    text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium tea estates ensure freshness within 24 hours of plucking.",
+   text: "Leaves picked, processed and dispatched without compromise. Direct partnerships with 50+ premium Tea estates ensure freshness within 24 hours of harvest.",
     image: freshGardenImg,
-    stats: "Fresh within 24hrs",
+   stats: "Direct Tea Garden Sourcing",
     certifications: ["Organic", "Rainforest", "Fair Trade"]
   },
   { 
@@ -587,14 +587,14 @@ const features = [
     certifications: ["Best Price", "Volume Discount", "Flexible Terms"]
   },
   { 
-    icon: Package, 
-    title: "Custom Packaging", 
-    shortText: "White-label solutions available.",
-    text: "White-label and bespoke packaging solutions on request. From eco-friendly materials to luxury gift boxes, we offer 100+ customizable options.",
-    image: packagingImg,
-    stats: "100+ Designs",
-    certifications: ["Eco-Friendly", "BPA Free", "Custom Labels"]
-  },
+  icon: Package, 
+  title: "Tea Garden Sourcing", 
+  shortText: "Direct sourcing from premium Tea gardens.",
+  text: "We source premium Assam Tea directly from multiple trusted Tea gardens. Access a wide variety of Tea grades and flexible quantities ranging from 25kg to bulk orders, ensuring consistent quality and reliable availability throughout the year.",
+  image: packagingImg,
+  stats: "50+ Tea Gardens",
+  certifications: ["Direct Sourcing", "Quality Assured", "Bulk Supply"]
+},
 ];
 
 export function ExportSection() {

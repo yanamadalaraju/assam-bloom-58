@@ -16,34 +16,34 @@ const postContentMap: Record<string, {
   quote?: { text: string; author: string };
 }> = {
   "The Rich Heritage of Assam Tea": {
-    content: "Assam tea has a rich history dating back to 1823 when Robert Bruce discovered tea plants growing wild in the region.",
-    longDescription: "Assam, the only place on earth where tea is indigenous, boasts a fascinating heritage that spans over two centuries. The discovery of Camellia sinensis var. assamica in the dense jungles of Assam marked the beginning of India's tryst with tea. Today, Assam produces over half of India's total tea output and is renowned worldwide for its robust, malty flavor profile.",
+    content: "Assam Tea has a rich history dating back to 1823 when Robert Bruce discovered Tea plants growing wild in the region.",
+    longDescription: "Assam, the only place on earth where Tea is indigenous, boasts a fascinating heritage that spans over two centuries. The discovery of Camellia sinensis var. assamica in the dense jungles of Assam marked the beginning of India's tryst with Tea. Today, Assam produces over half of India's total Tea output and is renowned worldwide for its robust, malty flavor profile.",
     sections: [
       {
         title: "The Discovery",
-        content: "In 1823, Scottish adventurer Robert Bruce discovered tea plants growing wild in the hills of Assam. His brother, Charles Bruce, later established the first tea gardens in the region, laying the foundation for what would become a global tea empire. The indigenous Singpho tribe had been consuming tea for centuries, using fermented tea leaves as a medicinal preparation."
+        content: "In 1823, Scottish adventurer Robert Bruce discovered Tea plants growing wild in the hills of Assam. His brother, Charles Bruce, later established the first Tea gardens in the region, laying the foundation for what would become a global Tea empire. The indigenous Singpho tribe had been consuming Tea for centuries, using fermented Tea leaves as a medicinal preparation."
       },
       {
         title: "The British Era",
-        content: "The British East India Company recognized the commercial potential of Assam tea and established the Assam Company in 1839. By the 1850s, tea production had become a major industry, with vast plantations carved out of the jungle. The unique climate of Assam - with its heavy rainfall, high humidity, and rich alluvial soil - proved ideal for tea cultivation."
+        content: "The British East India Company recognized the commercial potential of Assam Tea and established the Assam Company in 1839. By the 1850s, Tea production had become a major industry, with vast plantations carved out of the jungle. The unique climate of Assam - with its heavy rainfall, high humidity, and rich alluvial soil - proved ideal for Tea cultivation."
       },
       {
         title: "Modern Legacy",
-        content: "Today, Assam tea is celebrated globally as a breakfast tea staple. The region boasts over 850 tea gardens, employing millions of workers. Traditional practices blend with modern techniques to produce teas ranging from robust CTC to delicate orthodox varieties, each carrying the unmistakable essence of Assam."
+        content: "Today, Assam Tea is celebrated globally as a breakfast Tea staple. The region boasts over 850 Tea gardens, employing millions of workers. Traditional practices blend with modern techniques to produce Teas ranging from robust CTC to delicate orthodox varieties, each carrying the unmistakable essence of Assam."
       }
     ],
     quote: {
-      text: "Assam tea is not just a beverage; it's the liquid heritage of a land that gave tea to the world.",
+      text: "Assam Tea is not just a beverage; it's the liquid heritage of a land that gave Tea to the world.",
       author: "Tea Historian"
     }
   },
   "How Premium Tea is Crafted": {
-    content: "The art of crafting premium Assam tea involves careful plucking and precise processing.",
-    longDescription: "Premium tea crafting is an intricate art form that transforms fresh tea leaves into the aromatic beverage cherished worldwide. The journey from garden to cup involves several crucial steps, each demanding skill and precision.",
+    content: "The art of crafting premium Assam Tea involves careful plucking and precise processing.",
+    longDescription: "Premium Tea crafting is an intricate art form that transforms fresh Tea leaves into the aromatic beverage cherished worldwide. The journey from garden to cup involves several crucial steps, each demanding skill and precision.",
     sections: [
       {
         title: "Hand Plucking",
-        content: "Premium teas are hand-plucked by skilled workers who select only the top two leaves and a bud - the most tender and flavorful parts of the tea plant. This meticulous process ensures only the finest leaves make it to production, typically yielding just 50-80 kg of finished tea per day per plucker."
+        content: "Premium Teas are hand-plucked by skilled workers who select only the top two leaves and a bud - the most tender and flavorful parts of the Tea plant. This meticulous process ensures only the finest leaves make it to production, typically yielding just 50-80 kg of finished Tea per day per plucker."
       },
       {
         title: "Withering",
@@ -51,7 +51,7 @@ const postContentMap: Record<string, {
       },
       {
         title: "Rolling & Oxidation",
-        content: "The withered leaves undergo rolling to rupture cell walls, releasing essential oils and enzymes. The oxidation process that follows determines the tea's character - minimal for green teas, complete for black teas, and partial for oolongs. This is where the iconic malty Assam flavor develops."
+        content: "The withered leaves undergo rolling to rupture cell walls, releasing essential oils and enzymes. The oxidation process that follows determines the Tea's character - minimal for green Teas, complete for black Teas, and partial for oolongs. This is where the iconic malty Assam flavor develops."
       },
       {
         title: "Firing & Grading",
@@ -60,56 +60,56 @@ const postContentMap: Record<string, {
     ]
   },
   "Why Assam Tea is Loved Worldwide": {
-    content: "Assam tea's bold, malty character has earned it a global following among tea connoisseurs.",
-    longDescription: "From London tea rooms to Tokyo's trendy cafes, Assam tea has carved a special place in the hearts of tea lovers worldwide. Its distinctive characteristics make it uniquely versatile and beloved.",
+    content: "Assam Tea's bold, malty character has earned it a global following among Tea connoisseurs.",
+    longDescription: "From London Tea rooms to Tokyo's trendy cafes, Assam Tea has carved a special place in the hearts of Tea lovers worldwide. Its distinctive characteristics make it uniquely versatile and beloved.",
     sections: [
       {
         title: "The Signature Malty Flavor",
-        content: "Assam tea's bold, full-bodied profile with distinct malty notes comes from the region's unique terroir. The combination of high humidity, rich alluvial soil, and tropical climate creates teas that stand up beautifully to milk and sugar, making them perfect for breakfast blends."
+        content: "Assam Tea's bold, full-bodied profile with distinct malty notes comes from the region's unique terroir. The combination of high humidity, rich alluvial soil, and tropical climate creates Teas that stand up beautifully to milk and sugar, making them perfect for breakfast blends."
       },
       {
         title: "Versatility in Blending",
-        content: "Assam tea serves as the robust backbone for many famous blends, including English Breakfast, Irish Breakfast, and masala chai. Its strong character shines through other ingredients, providing depth and color while allowing additional spices or flavors to complement rather than overpower."
+        content: "Assam Tea serves as the robust backbone for many famous blends, including English Breakfast, Irish Breakfast, and masala chai. Its strong character shines through other ingredients, providing depth and color while allowing additional spices or flavors to complement rather than overpower."
       },
       {
         title: "Health & Wellness Benefits",
-        content: "Beyond taste, Assam tea offers impressive health benefits. Rich in polyphenols and antioxidants, it supports heart health, boosts mental alertness, and aids digestion. The higher caffeine content provides a natural energy boost, making it a healthier alternative to coffee for many."
+        content: "Beyond taste, Assam Tea offers impressive health benefits. Rich in polyphenols and antioxidants, it supports heart health, boosts mental alertness, and aids digestion. The higher caffeine content provides a natural energy boost, making it a healthier alternative to coffee for many."
       }
     ]
   },
   "Understanding Orthodox vs CTC Tea": {
     content: "Learn the key differences between traditional Orthodox processing and modern CTC methods.",
-    longDescription: "The two primary methods of processing black tea - Orthodox and CTC (Crush, Tear, Curl) - produce distinctly different results. Understanding these methods helps tea lovers choose the right tea for their preferences.",
+    longDescription: "The two primary methods of processing black Tea - Orthodox and CTC (Crush, Tear, Curl) - produce distinctly different results. Understanding these methods helps Tea lovers choose the right Tea for their preferences.",
     sections: [
       {
         title: "Orthodox Method",
-        content: "The traditional Orthodox method involves gentle rolling of withered leaves to preserve leaf integrity. This process produces whole or large broken leaves that yield complex, layered flavors. Orthodox teas require careful brewing and reward patience with nuanced tasting notes ranging from floral to fruity."
+        content: "The traditional Orthodox method involves gentle rolling of withered leaves to preserve leaf integrity. This process produces whole or large broken leaves that yield complex, layered flavors. Orthodox Teas require careful brewing and reward patience with nuanced tasting notes ranging from floral to fruity."
       },
       {
         title: "CTC Method",
-        content: "CTC processing uses machines with serrated rollers to crush, tear, and curl leaves into small, hard pellets. This method extracts more color and strength quickly, producing a robust, consistent brew perfect for strong milk tea and commercial use. CTC teas dominate the mass market due to their efficiency and bold flavor."
+        content: "CTC processing uses machines with serrated rollers to crush, Tear, and curl leaves into small, hard pellets. This method extracts more color and strength quickly, producing a robust, consistent brew perfect for strong milk Tea and commercial use. CTC Teas dominate the mass market due to their efficiency and bold flavor."
       },
       {
         title: "Choosing Between Them",
-        content: "Orthodox teas are ideal for contemplative tea sessions where flavor complexity is valued. CTC teas excel in quick brews, chai lattes, and any preparation requiring strong, consistent results. Many premium brands offer both styles, catering to different occasions and preferences."
+        content: "Orthodox Teas are ideal for contemplative Tea sessions where flavor complexity is valued. CTC Teas excel in quick brews, chai lattes, and any preparation requiring strong, consistent results. Many premium brands offer both styles, catering to different occasions and preferences."
       }
     ]
   },
   "Health Benefits of Drinking Pure Assam Tea": {
-    content: "Discover how pure Assam tea can boost your health and wellbeing.",
-    longDescription: "Beyond its delicious taste, pure Assam tea offers numerous scientifically-backed health benefits. Regular consumption as part of a balanced lifestyle can contribute significantly to overall wellness.",
+    content: "Discover how pure Assam Tea can boost your health and wellbeing.",
+    longDescription: "Beyond its delicious taste, pure Assam Tea offers numerous scientifically-backed health benefits. Regular consumption as part of a balanced lifestyle can contribute significantly to overall wellness.",
     sections: [
       {
         title: "Heart Health",
-        content: "Studies show that regular black tea consumption is associated with reduced risk of cardiovascular disease. The flavonoids in Assam tea help lower blood pressure, reduce LDL cholesterol levels, and improve blood vessel function. Drinking 2-3 cups daily may significantly benefit heart health."
+        content: "Studies show that regular black Tea consumption is associated with reduced risk of cardiovascular disease. The flavonoids in Assam Tea help lower blood pressure, reduce LDL cholesterol levels, and improve blood vessel function. Drinking 2-3 cups daily may significantly benefit heart health."
       },
       {
         title: "Mental Alertness",
-        content: "Assam tea contains L-theanine, an amino acid that works synergistically with caffeine to enhance cognitive function without the jitters. This combination promotes focused, calm alertness, improving concentration and reaction time. Many professionals prefer Assam tea as their workday beverage."
+        content: "Assam Tea contains L-theanine, an amino acid that works synergistically with caffeine to enhance cognitive function without the jitters. This combination promotes focused, calm alertness, improving concentration and reaction time. Many professionals prefer Assam Tea as their workday beverage."
       },
       {
         title: "Gut Health & Immunity",
-        content: "The polyphenols in Assam tea act as prebiotics, supporting beneficial gut bacteria growth. A healthy gut microbiome strengthens immune function and reduces inflammation. Additionally, tea's antimicrobial properties may help fight harmful bacteria in the digestive tract."
+        content: "The polyphenols in Assam Tea act as prebiotics, supporting beneficial gut bacteria growth. A healthy gut microbiome strengthens immune function and reduces inflammation. Additionally, Tea's antimicrobial properties may help fight harmful bacteria in the digestive tract."
       }
     ]
   }

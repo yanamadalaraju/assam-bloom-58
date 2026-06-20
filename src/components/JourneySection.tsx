@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 
 
 // Images
-import step1 from "@/assets/teagarden1.jpg";
+import step1 from "@/assets/Teagarden1.jpg";
 import step2 from "@/assets/handpulking.jpg";
-import step3 from "@/assets/teaprocessimage.jpg";
-import step4 from "@/assets/teapacking.jpg";
-import step5 from "@/assets/hero-tea-garden.jpg";
+import step3 from "@/assets/Teaprocessimage.jpg";
+import step4 from "@/assets/Teapacking.jpg";
+import step5 from "@/assets/hero-Tea-garden.jpg";
 import step6 from "@/assets/cup.jpg";
 import SectionReveal from "./SectionReveal";
 
 const journeyData = [
   {
     title: "Tea Gardens",
-    desc: "Sourced directly from the lush tea estates of Upper Assam.",
+    desc: "Sourced directly from the lush Tea estates of Upper Assam.",
     img: step1,
   },
   {
@@ -40,7 +40,7 @@ const journeyData = [
   },
   {
     title: "Perfect Cup",
-    desc: "Enjoy a rich, aromatic cup of authentic Assam tea.",
+    desc: "Enjoy a rich, aromatic cup of authentic Assam Tea.",
     img: step6,
   },
 ];
@@ -56,7 +56,7 @@ const JourneySection: React.FC = () => {
             The Journey of Every Tea Leaf 🍃☕
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-20">
-            Discover the journey of our premium Assam tea — crafted with care 
+            Discover the journey of our premium Assam Tea — crafted with care 
             at every step to deliver unmatched taste and quality.
           </p>
         </SectionReveal>

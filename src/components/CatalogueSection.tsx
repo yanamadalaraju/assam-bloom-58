@@ -41,7 +41,7 @@ const products = [
     reviews: 234,
     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=400&h=400&fit=crop",
     badge: "Best Seller",
-    description: "Bold, brisk, and full-bodied CTC tea with rich golden liquor and strong malty character.",
+    description: "Bold, brisk, and full-bodied CTC Tea with rich golden liquor and strong malty character.",
     features: ["Single Estate", "Handpicked", "Grade: FBOP"],
     packaging: ["250g", "500g", "1kg", "5kg", "25kg"],
     availability: "In Stock",
@@ -57,7 +57,7 @@ const products = [
     reviews: 189,
     image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&h=400&fit=crop",
     badge: "Premium",
-    description: "Exquisite whole-leaf orthodox tea with complex notes of honey, malt, and a hint of fruit.",
+    description: "Exquisite whole-leaf orthodox Tea with complex notes of honey, malt, and a hint of fruit.",
     features: ["TGFOP Grade", "Whole Leaf", "First Flush"],
     packaging: ["250g", "500g", "1kg", "5kg"],
     availability: "Limited Stock",
@@ -73,7 +73,7 @@ const products = [
     reviews: 456,
     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=400&h=400&fit=crop",
     badge: "Value Pack",
-    description: "Quality Assam tea at an accessible price point. Perfect for daily consumption.",
+    description: "Quality Assam Tea at an accessible price point. Perfect for daily consumption.",
     features: ["Consistent Quality", "Good Strength", "Grade: BP"],
     packaging: ["500g", "1kg", "5kg", "10kg", "25kg"],
     availability: "In Stock",
@@ -105,7 +105,7 @@ const products = [
     reviews: 278,
     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=400&h=400&fit=crop",
     badge: "Organic",
-    description: "Certified organic green tea with delicate flavor, fresh grassy notes, and high antioxidants.",
+    description: "Certified organic green Tea with delicate flavor, fresh grassy notes, and high antioxidants.",
     features: ["USDA Organic", "Non-GMO", "Fresh Harvest"],
     packaging: ["250g", "500g", "1kg", "5kg"],
     availability: "In Stock",
@@ -121,7 +121,7 @@ const products = [
     reviews: 167,
     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=400&h=400&fit=crop",
     badge: "Export Quality",
-    description: "Premium orthodox tea with rich aroma, golden color, and exceptional smoothness.",
+    description: "Premium orthodox Tea with rich aroma, golden color, and exceptional smoothness.",
     features: ["Export Grade", "Golden Tips", "GFOP"],
     packaging: ["250g", "500g", "1kg", "5kg", "10kg"],
     availability: "In Stock",
@@ -210,7 +210,7 @@ export function CatalogueSection() {
           </h2>
           
           <p className="text-gray-600 text-base md:text-lg">
-            Discover our extensive range of premium Assam teas. Perfect for retailers, distributors, and bulk buyers.
+            Discover our extensive range of premium Assam Teas. Perfect for retailers, distributors, and bulk buyers.
           </p>
         </motion.div>
 
