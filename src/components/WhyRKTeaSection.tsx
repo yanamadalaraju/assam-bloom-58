@@ -10,7 +10,7 @@ import bgTeaField from "@/assets/hero-2.jpg"; // Full section background image
 
 export function WhyRKTeaSection() {
   return (
-    <section className="relative min-h-[800px] py-16 md:py-24 overflow-hidden">
+    <section className="relative min-h-[800px] py-20 md:py-28 overflow-hidden">
       {/* Full Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -41,14 +41,14 @@ export function WhyRKTeaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-4xl mx-auto mb-16"
+          className="text-center max-w-4xl mx-auto mb-16 md:mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 backdrop-blur-sm border border-gold/30 mb-4">
-            <Crown className="w-3 h-3 text-gold" />
-            <span className="text-[11px] uppercase tracking-wider text-gold font-semibold">Since 1990</span>
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gold/20 backdrop-blur-sm border border-gold/30 mb-5">
+            <Crown className="w-4 h-4 text-gold" />
+            <span className="text-sm uppercase tracking-wider text-gold font-semibold">Since 1990</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-4">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-cream leading-tight mb-5">
             Why{' '}
             <span className="relative inline-block">
               <span className="italic text-gold">R.K. Tea?</span>
@@ -65,7 +65,7 @@ export function WhyRKTeaSection() {
             </span>
           </h2>
           
-          <p className="text-cream/80 text-base md:text-lg max-w-2xl mx-auto backdrop-blur-sm bg-black/20 rounded-lg p-4 inline-block">
+          <p className="text-cream/80 text-lg md:text-xl max-w-3xl mx-auto backdrop-blur-sm bg-black/20 rounded-lg p-5 inline-block">
             Over three decades of excellence in bringing the finest Assam Tea from the gardens of Northeast India to discerning buyers worldwide.
           </p>
         </motion.div>
@@ -76,53 +76,53 @@ export function WhyRKTeaSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="relative bg-black/40 backdrop-blur-md rounded-2xl border border-gold/20 p-8 md:p-10 mb-16 overflow-hidden"
+          className="relative bg-black/40 backdrop-blur-md rounded-2xl border border-gold/20 p-8 md:p-12 mb-16 overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-2xl pointer-events-none" />
           
-          <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
             {/* Left - Years */}
             <div className="flex-shrink-0 text-center md:text-left">
-              <div className="flex items-center gap-4 justify-center md:justify-start">
-                <div className="w-20 h-20 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center border-2 border-gold/40">
-                  <Calendar className="w-10 h-10 text-gold" />
+              <div className="flex items-center gap-5 justify-center md:justify-start">
+                <div className="w-24 h-24 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center border-2 border-gold/40">
+                  <Calendar className="w-12 h-12 text-gold" />
                 </div>
                 <div>
-                  <div className="text-5xl md:text-6xl font-display text-gold font-bold">1990</div>
-                  <div className="text-cream/60 text-sm uppercase tracking-widest mt-1">Founded</div>
+                  <div className="text-6xl md:text-7xl font-display text-gold font-bold">1990</div>
+                  <div className="text-cream/60 text-base uppercase tracking-widest mt-1">Founded</div>
                 </div>
               </div>
               <div className="mt-3 flex items-center gap-3 justify-center md:justify-start">
-                <div className="h-px w-8 bg-gold/30" />
-                <span className="text-cream/40 text-xs uppercase tracking-[0.3em]">To Present</span>
-                <div className="h-px w-8 bg-gold/30" />
+                <div className="h-px w-10 bg-gold/30" />
+                <span className="text-cream/40 text-sm uppercase tracking-[0.3em]">To Present</span>
+                <div className="h-px w-10 bg-gold/30" />
               </div>
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px h-24 bg-gold/20" />
+            <div className="hidden md:block w-px h-28 bg-gold/20" />
 
             {/* Right - Description */}
             <div className="flex-1 text-center md:text-left">
-              <h3 className="font-display text-2xl md:text-3xl text-cream mb-2">
+              <h3 className="font-display text-3xl md:text-4xl text-cream mb-3">
                 Three Decades of Tea Excellence
               </h3>
-              <p className="text-cream/80 text-base md:text-lg leading-relaxed">
+              <p className="text-cream/80 text-lg md:text-xl leading-relaxed">
                 Since 1990, R.K. Tea Sales has been dedicated to sourcing, processing, and delivering the 
                 finest Assam Tea to customers across India and around the world. Our journey spans over 
                 35 years of unwavering commitment to quality, authenticity, and customer satisfaction.
               </p>
-              <div className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
-                <span className="inline-flex items-center gap-1.5 text-xs text-gold/80 bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full">
-                  <Star className="w-3.5 h-3.5 fill-gold text-gold" />
+              <div className="flex flex-wrap gap-4 mt-5 justify-center md:justify-start">
+                <span className="inline-flex items-center gap-2 text-sm text-gold/80 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                  <Star className="w-4 h-4 fill-gold text-gold" />
                   Trusted Since 1990
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-xs text-gold/80 bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full">
-                  <Leaf className="w-3.5 h-3.5 text-gold" />
+                <span className="inline-flex items-center gap-2 text-sm text-gold/80 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                  <Leaf className="w-4 h-4 text-gold" />
                   Pure Assam Tea
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-xs text-gold/80 bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full">
-                  <Shield className="w-3.5 h-3.5 text-gold" />
+                <span className="inline-flex items-center gap-2 text-sm text-gold/80 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                  <Shield className="w-4 h-4 text-gold" />
                   Quality Guaranteed
                 </span>
               </div>
@@ -130,8 +130,8 @@ export function WhyRKTeaSection() {
           </div>
         </motion.div>
 
-        {/* 4 Key Reasons with Background Images */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* 4 Key Reasons with Full Visible Images */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
@@ -141,34 +141,36 @@ export function WhyRKTeaSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative overflow-hidden rounded-xl border border-gold/20 hover:border-gold/40 transition-all duration-500 hover:shadow-xl hover:shadow-gold/5 hover:scale-[1.02] min-h-[280px]"
+                className="group relative overflow-hidden rounded-xl border border-gold/20 hover:border-gold/40 transition-all duration-500 hover:shadow-xl hover:shadow-gold/5 hover:scale-[1.02] min-h-[340px] md:min-h-[380px]"
               >
-                {/* Background Image */}
+                {/* Full Background Image - No Overlay */}
                 <div className="absolute inset-0">
                   <img 
                     src={reason.image} 
                     alt={reason.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  {/* Dark Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30" />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80" />
                 </div>
 
-                {/* Content */}
-                <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                  <div className="w-14 h-14 rounded-xl bg-gold/20 backdrop-blur-sm flex items-center justify-center mb-4 group-hover:bg-gold/30 transition-colors duration-300 border border-gold/30">
-                    <Icon className="w-7 h-7 text-gold" />
-                  </div>
-                  <h3 className="font-display text-xl text-cream mb-2 group-hover:text-gold transition-colors duration-300 drop-shadow-md">
-                    {reason.title}
-                  </h3>
-                  <p className="text-cream/80 text-sm leading-relaxed drop-shadow-md">
-                    {reason.description}
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-gold/80">
-                    <span className="w-6 h-px bg-gold/50" />
-                    <span className="drop-shadow-md">{reason.tag}</span>
+                {/* Content with transparent background for full image visibility */}
+                <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-7">
+                  {/* Glass morphism content box */}
+                  <div className="bg-black/40 backdrop-blur-md rounded-xl p-5 border border-white/10 hover:border-gold/30 transition-all duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-12 h-12 rounded-xl bg-gold/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-gold/30 transition-colors duration-300 border border-gold/30 flex-shrink-0">
+                        <Icon className="w-6 h-6 text-gold" />
+                      </div>
+                      <h3 className="font-display text-xl md:text-2xl text-cream group-hover:text-gold transition-colors duration-300">
+                        {reason.title}
+                      </h3>
+                    </div>
+                    <p className="text-cream/90 text-sm md:text-base leading-relaxed">
+                      {reason.description}
+                    </p>
+                    <div className="mt-3 flex items-center gap-3 text-xs md:text-sm text-gold/80">
+                      <span className="w-6 h-px bg-gold/50" />
+                      <span className="font-medium">{reason.tag}</span>
+                    </div>
                   </div>
                 </div>
 
@@ -187,23 +189,23 @@ export function WhyRKTeaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6 border-t border-b border-gold/20 bg-black/20 backdrop-blur-sm rounded-xl px-6"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 border-t border-b border-gold/20 bg-black/20 backdrop-blur-sm rounded-xl px-6 md:px-8"
         >
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gold font-display">1990</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Year Founded</div>
+            <div className="text-4xl md:text-5xl font-bold text-gold font-display">1990</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Year Founded</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gold font-display">35+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Years of Excellence</div>
+            <div className="text-4xl md:text-5xl font-bold text-gold font-display">35+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Years of Excellence</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gold font-display">250+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Trusted Dealers</div>
+            <div className="text-4xl md:text-5xl font-bold text-gold font-display">250+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Trusted Dealers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gold font-display">200+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Cities Served</div>
+            <div className="text-4xl md:text-5xl font-bold text-gold font-display">200+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Cities Served</div>
           </div>
         </motion.div>
 
@@ -213,14 +215,14 @@ export function WhyRKTeaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center mt-12"
+          className="text-center mt-14"
         >
           <a
             href="#about"
-            className="group inline-flex items-center gap-3 px-8 py-3 bg-gold text-forest-deep font-semibold rounded-full hover:bg-amber-500 transition-all duration-300 hover:scale-105 shadow-lg shadow-gold/30"
+            className="group inline-flex items-center gap-3 px-10 py-4 bg-gold text-forest-deep font-semibold rounded-full hover:bg-amber-500 transition-all duration-300 hover:scale-105 shadow-lg shadow-gold/30 text-lg"
           >
             Discover Our Journey Since 1990
-            <TrendingUp className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            <TrendingUp className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </a>
         </motion.div>
       </div>

@@ -97,7 +97,7 @@
 //               <div className="space-y-3 mb-6">
 //                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
 //                   <Mail className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />
-//                   <a href="mailto:hello@rkTeasales.com" className="text-sm">hello@rkTeasales.com</a>
+//                   <a href="mailto: surendra.agarwal@gmail.com" className="text-sm"> surendra.agarwal@gmail.com</a>
 //                 </div>
 //                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
 //                   <Phone className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />
@@ -357,7 +357,7 @@
 //               <div className="space-y-3 mb-6">
 //                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
 //                   <Mail className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />
-//                   <a href="mailto:hello@rkTeasales.com" className="text-sm">hello@rkTeasales.com</a>
+//                   <a href="mailto: surendra.agarwal@gmail.com" className="text-sm"> surendra.agarwal@gmail.com</a>
 //                 </div>
 //                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
 //                   <Phone className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />
@@ -615,7 +615,7 @@ export function Footer() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
                   <Mail className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />
-                  <a href="mailto:hello@rkTeasales.com" className="text-sm">hello@rkTeasales.com</a>
+                  <a href="mailto: surendra.agarwal@gmail.com" className="text-sm"> surendra.agarwal@gmail.com</a>
                 </div>
                 <div className="flex items-center gap-3 text-cream/60 hover:text-cream transition-colors group">
                   <Phone className="w-4 h-4 text-gold group-hover:scale-110 transition-transform" />

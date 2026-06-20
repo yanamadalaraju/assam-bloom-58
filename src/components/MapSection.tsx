@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Navigation, ExternalLink } from "lucide-rea
 
 export function MapSection() {
   return (
-    <section className="relative bg-gradient-to-br from-forest-deep via-forest to-forest-deep py-16 md:py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-forest-deep via-forest to-forest-deep py-20 md:py-28 overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="absolute inset-0" style={{
@@ -22,14 +22,14 @@ export function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-4xl mx-auto mb-14 md:mb-18"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 mb-4">
-            <MapPin className="w-3 h-3 text-gold" />
-            <span className="text-[11px] uppercase tracking-wider text-gold font-semibold">Visit Us</span>
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-5">
+            <MapPin className="w-4 h-4 text-gold" />
+            <span className="text-sm uppercase tracking-wider text-gold font-semibold">Visit Us</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-4">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-5">
             Find Us in{' '}
             <span className="relative whitespace-nowrap">
               <span className="italic text-gold">Hyderabad</span>
@@ -46,12 +46,12 @@ export function MapSection() {
             </span>
           </h2>
           
-          <p className="text-cream/70 text-base md:text-lg">
+          <p className="text-cream/70 text-lg md:text-xl">
             Visit our office in the heart of Hyderabad. We'd love to meet you and discuss your Tea requirements.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-10">
           {/* Left - Map */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -62,7 +62,7 @@ export function MapSection() {
           >
             <div className="relative w-full aspect-[4/3] md:aspect-[16/9]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3807.772362343981!2d78.4684791751646!3d17.374683383510327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1781874604444!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3807.772362343981!2d78.4684791751646!3d17.374683383510327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIyJzI4LjkiTiA3OMKwMjgnMTUuOCJF!5e0!3m2!1sen!2sin!4v1781944034346!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -74,16 +74,16 @@ export function MapSection() {
               />
               
               {/* Map Overlay Gradient */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-forest-deep to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-forest-deep to-transparent pointer-events-none" />
               
               {/* Open in Google Maps Button */}
               <a
                 href="https://www.google.com/maps/dir//17.374683,78.468479"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute bottom-4 right-4 z-10 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gold text-forest-deep text-xs font-semibold hover:bg-amber-500 transition-all duration-300 shadow-lg shadow-gold/25 hover:scale-105"
+                className="absolute bottom-4 right-4 z-10 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-gold text-forest-deep text-sm font-semibold hover:bg-amber-500 transition-all duration-300 shadow-lg shadow-gold/25 hover:scale-105"
               >
-                <Navigation className="w-3.5 h-3.5" />
+                <Navigation className="w-4 h-4" />
                 Get Directions
               </a>
             </div>
@@ -98,48 +98,52 @@ export function MapSection() {
             className="space-y-6"
           >
             {/* Address Card */}
-            <div className="bg-cream/5 backdrop-blur-sm rounded-2xl p-6 border border-gold/20 hover:border-gold/40 transition-all duration-300">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-gold/20 flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-gold" />
+            <div className="bg-cream/5 backdrop-blur-sm rounded-2xl p-6 md:p-7 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:shadow-xl hover:shadow-gold/5">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-gold" />
                 </div>
-                <h3 className="font-display text-xl text-cream">Our Office</h3>
+                <h3 className="font-display text-2xl text-cream">Our Office</h3>
               </div>
               
-              <div className="space-y-2 text-cream/70 text-sm leading-relaxed">
-                <p className="font-semibold text-cream">R. K. Tea SALES</p>
+              <div className="space-y-3 text-cream/70 text-base md:text-lg leading-relaxed">
+                <p className="font-semibold text-cream text-lg">R. K. Tea SALES</p>
                 <p>#15-6-464/470, 1st Floor,</p>
                 <p>SALASAR COMPPLEX, BEGUM BAZAR,</p>
                 <p>HYDERABAD-500012</p>
                 
-                <div className="pt-3 mt-3 border-t border-gold/20 space-y-2">
-                  <div className="flex items-center gap-2 text-cream/60">
-                    <Phone className="w-3.5 h-3.5 text-gold" />
-                    <a href="tel:+919849023900" className="hover:text-gold transition-colors">98490 23900</a>
+                <div className="pt-4 mt-4 border-t border-gold/20 space-y-3">
+                  <div className="flex items-center gap-3 text-cream/60">
+                    <Phone className="w-4 h-4 text-gold flex-shrink-0" />
+                    <a href="tel:+919849023900" className="hover:text-gold transition-colors text-base">
+                      98490 23900
+                    </a>
                   </div>
-                  <div className="flex items-center gap-2 text-cream/60">
-                    <Mail className="w-3.5 h-3.5 text-gold" />
-                    <a href="mailto:hello@rkTeasales.com" className="hover:text-gold transition-colors">hello@rkTeasales.com</a>
+                  <div className="flex items-center gap-3 text-cream/60">
+                    <Mail className="w-4 h-4 text-gold flex-shrink-0" />
+                    <a href="mailto:surendra.agarwal@gmail.com" className="hover:text-gold transition-colors text-base">
+                      surendra.agarwal@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Business Hours */}
-            <div className="bg-cream/5 backdrop-blur-sm rounded-2xl p-6 border border-gold/20 hover:border-gold/40 transition-all duration-300">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-gold/20 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-gold" />
+            <div className="bg-cream/5 backdrop-blur-sm rounded-2xl p-6 md:p-7 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:shadow-xl hover:shadow-gold/5">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-gold" />
                 </div>
-                <h3 className="font-display text-xl text-cream">Business Hours</h3>
+                <h3 className="font-display text-2xl text-cream">Business Hours</h3>
               </div>
               
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between items-center border-b border-gold/10 pb-2">
+              <div className="space-y-3 text-base">
+                <div className="flex justify-between items-center border-b border-gold/10 pb-3">
                   <span className="text-cream/60">Monday - Friday</span>
                   <span className="text-cream font-medium">9:00 AM - 6:00 PM</span>
                 </div>
-                <div className="flex justify-between items-center border-b border-gold/10 pb-2">
+                <div className="flex justify-between items-center border-b border-gold/10 pb-3">
                   <span className="text-cream/60">Saturday</span>
                   <span className="text-cream font-medium">10:00 AM - 4:00 PM</span>
                 </div>
@@ -154,18 +158,18 @@ export function MapSection() {
             <div className="grid grid-cols-2 gap-3">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-gold to-amber-500 text-forest-deep font-semibold text-sm hover:shadow-lg hover:shadow-gold/25 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl bg-gradient-to-r from-gold to-amber-500 text-forest-deep font-semibold text-base hover:shadow-lg hover:shadow-gold/25 transition-all duration-300 hover:scale-105"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-5 h-5" />
                 Contact Us
               </a>
               <a
                 href="https://www.google.com/maps/dir//17.374683,78.468479"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-gold/30 text-gold font-semibold text-sm hover:bg-gold/10 transition-all duration-300 hover:border-gold"
+                className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl border-2 border-gold/30 text-gold font-semibold text-base hover:bg-gold/10 transition-all duration-300 hover:border-gold"
               >
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-5 h-5" />
                 Directions
               </a>
             </div>
@@ -178,10 +182,10 @@ export function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-10"
+          className="text-center mt-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cream/5 border border-gold/20 backdrop-blur-sm">
-            <span className="text-cream/50 text-xs uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-cream/5 border border-gold/20 backdrop-blur-sm">
+            <span className="text-cream/50 text-sm uppercase tracking-wider">
               🏢 Visit us in person • Tea tasting available • Free consultation
             </span>
           </div>

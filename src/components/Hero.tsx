@@ -288,8 +288,6 @@
 
 
 
-
-
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ArrowRight, Crown, Star } from "lucide-react";
@@ -359,7 +357,8 @@ export function Hero() {
 
       <TeaParticles count={28} />
 
-      <div className="relative z-10 flex h-full items-center px-6">
+      {/* Content wrapper with proper z-index and padding */}
+      <div className="relative z-10 flex h-full items-start md:items-center px-6 pt-32 md:pt-40 pb-32">
         <div className="mx-auto w-full max-w-7xl">
           <AnimatePresence mode="wait">
             <motion.div
@@ -368,43 +367,45 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="max-w-3xl"
+              className="max-w-4xl"
             >
               {/* Trust Badge - India's Trusted Tea Since 1990 */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/20 backdrop-blur-sm border border-gold/40 mb-6"
+                className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-forest-deep/80 backdrop-blur-md border border-gold/50 shadow-lg shadow-black/20 mb-8"
               >
-                <Crown className="w-4 h-4 text-gold" />
-                <span className="text-[10px] uppercase tracking-[0.3em] text-gold font-semibold">
+                <Crown className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-sm uppercase tracking-[0.3em] text-gold font-semibold whitespace-nowrap">
                   India's Trusted Tea Since 1990
                 </span>
-                <Star className="w-3 h-3 text-gold fill-gold" />
+                <Star className="w-4 h-4 text-gold fill-gold flex-shrink-0" />
               </motion.div>
 
-              <div className="flex items-center gap-3 mb-6">
-                <span className="h-px w-12 bg-gold" />
-                <span className="text-xs uppercase tracking-[0.4em] text-gold">{slide.eyebrow}</span>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="h-px w-16 bg-gold" />
+                <span className="text-base uppercase tracking-[0.4em] text-gold font-medium">{slide.eyebrow}</span>
               </div>
-              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-cream leading-[1.05] mb-6">
+              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-cream leading-[1.05] mb-6 md:mb-8">
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-xl text-cream/80 max-w-xl leading-relaxed font-light mb-10">
+              <p className={`text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed font-light mb-8 md:mb-10 lg:mb-12 ${
+                index === 3 ? 'text-black' : 'text-cream/80'
+              }`}>
                 {slide.subtitle}
               </p>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 <a
                   href="#products"
-                  className="group inline-flex items-center gap-3 rounded-full border border-gold/70 bg-gold/5 px-8 py-4 text-sm uppercase tracking-[0.2em] text-gold hover:bg-gold hover:text-forest-deep transition-all duration-500 shadow-gold"
+                  className="group inline-flex items-center gap-3 rounded-full border border-gold/70 bg-gold/10 backdrop-blur-sm px-8 md:px-10 py-4 md:py-5 text-sm md:text-base uppercase tracking-[0.2em] text-gold hover:bg-gold hover:text-forest-deep transition-all duration-500 shadow-gold hover:shadow-lg hover:shadow-gold/30"
                 >
                   Explore Collection
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
                 </a>
                 <a
                   href="#about"
-                  className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-cream/80 hover:text-gold transition-colors"
+                  className="inline-flex items-center gap-2 text-sm md:text-base uppercase tracking-[0.2em] text-cream/80 hover:text-gold transition-colors"
                 >
                   Our Story
                 </a>
@@ -415,7 +416,7 @@ export function Hero() {
       </div>
 
       {/* Slide indicators - Clickable with dots */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4">
+      <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 md:gap-5">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -426,10 +427,10 @@ export function Hero() {
             aria-label={`Go to slide ${i + 1}`}
           >
             <div
-              className={`h-2 rounded-full transition-all duration-500 ${
+              className={`h-2.5 md:h-3 rounded-full transition-all duration-500 ${
                 i === index 
-                  ? "w-10 bg-gold shadow-lg shadow-gold/30" 
-                  : "w-2 bg-cream/40 group-hover:bg-cream/70 group-hover:w-4"
+                  ? "w-10 md:w-14 bg-gold shadow-lg shadow-gold/30" 
+                  : "w-2.5 md:w-3 bg-cream/40 group-hover:bg-cream/70 group-hover:w-4 md:group-hover:w-6"
               }`}
             />
             <span className="sr-only">Slide {i + 1}</span>
@@ -441,10 +442,10 @@ export function Hero() {
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-6 right-8 z-10 flex flex-col items-center gap-2 text-gold/70"
+        className="absolute bottom-4 md:bottom-6 right-6 md:right-8 z-10 flex flex-col items-center gap-1.5 md:gap-2 text-gold/70"
       >
-        <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
-        <ChevronDown className="h-4 w-4" />
+        <span className="text-[10px] md:text-xs uppercase tracking-[0.3em]">Scroll</span>
+        <ChevronDown className="h-4 w-4 md:h-5 md:w-5" />
       </motion.div>
     </section>
   );

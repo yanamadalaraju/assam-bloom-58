@@ -429,7 +429,7 @@ export function DealerBenefitsSection() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <section id="dealers" className="relative bg-gradient-to-br from-forest-deep via-forest to-forest-deep py-16 md:py-20 overflow-hidden">
+    <section id="dealers" className="relative bg-gradient-to-br from-forest-deep via-forest to-forest-deep py-20 md:py-24 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute inset-0" style={{
@@ -449,14 +449,14 @@ export function DealerBenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-4xl mx-auto mb-14 md:mb-18"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 mb-4">
-            <Zap className="w-3 h-3 text-gold" />
-            <span className="text-[11px] uppercase tracking-wider text-gold font-semibold">Exclusive Benefits</span>
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-5">
+            <Zap className="w-4 h-4 text-gold" />
+            <span className="text-sm uppercase tracking-wider text-gold font-semibold">Exclusive Benefits</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-4">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-5">
             Why Partner With{' '}
             <span className="relative whitespace-nowrap">
               <span className="italic text-gold">R K Tea?</span>
@@ -473,13 +473,13 @@ export function DealerBenefitsSection() {
             </span>
           </h2>
           
-          <p className="text-cream/70 text-base md:text-lg">
+          <p className="text-cream/70 text-lg md:text-xl">
             Join 250+ successful dealers and unlock exclusive benefits with India's most trusted Tea exporter
           </p>
         </motion.div>
 
         {/* Main Benefits Grid - Clear Images Before Hover */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             const isHovered = hoveredCard === index;
@@ -493,34 +493,34 @@ export function DealerBenefitsSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
-                className="relative h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="relative h-[400px] md:h-[420px] rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
                 {/* Background Image - Always Visible and Clear */}
                 <div className="absolute inset-0">
                   <img 
                     src={benefit.image} 
                     alt={benefit.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {/* Lighter gradient so image is more visible */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/50 to-forest-deep/20" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/10 to-forest-deep/10" />
                 </div>
 
                 {/* Content - Drawer slides up from bottom */}
                 <div className="absolute inset-x-0 bottom-0 h-full flex flex-col justify-end">
                   {/* Always Visible Content - Top section with better transparency */}
-                  <div className="p-5">
+                  <div className="p-5 md:p-6">
                     <div className="flex items-start justify-between mb-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-xl bg-black/30 backdrop-blur-sm flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-gold" />
+                        <div className="w-14 h-14 rounded-xl bg-black/30 backdrop-blur-sm flex items-center justify-center">
+                          <Icon className="w-7 h-7 text-gold" />
                         </div>
                         <div>
-                          <h3 className="text-cream font-display font-bold text-xl drop-shadow-md">{benefit.title}</h3>
-                          <p className="text-cream/80 text-sm mt-0.5 drop-shadow-sm">{benefit.shortDesc}</p>
+                          <h3 className="text-cream font-display font-bold text-xl md:text-2xl drop-shadow-md">{benefit.title}</h3>
+                          <p className="text-cream/80 text-sm md:text-base mt-0.5 drop-shadow-sm">{benefit.shortDesc}</p>
                         </div>
                       </div>
-                      <div className="px-2.5 py-1 rounded-full bg-gold text-forest-deep text-xs font-bold shadow-lg">
+                      <div className="px-3 py-1.5 rounded-full bg-gold text-forest-deep text-sm font-bold shadow-lg flex-shrink-0">
                         {benefit.stat}
                       </div>
                     </div>
@@ -536,14 +536,14 @@ export function DealerBenefitsSection() {
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="p-5 pt-0 bg-gradient-to-t from-forest-deep via-forest-deep/95 to-transparent">
-                      <p className="text-cream/90 text-sm leading-relaxed mb-3">
+                    <div className="p-5 md:p-6 pt-0 bg-gradient-to-t from-forest-deep via-forest-deep/95 to-transparent">
+                      <p className="text-cream/90 text-base md:text-lg leading-relaxed mb-4">
                         {benefit.description}
                       </p>
                       
-                      <div className="flex flex-wrap gap-2 mb-3">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {benefit.features.map((feature, idx) => (
-                          <span key={idx} className="px-2 py-1 rounded-full bg-cream/15 text-cream/80 text-xs backdrop-blur-sm">
+                          <span key={idx} className="px-3 py-1.5 rounded-full bg-cream/15 text-cream/80 text-sm backdrop-blur-sm">
                             {feature}
                           </span>
                         ))}
@@ -551,10 +551,10 @@ export function DealerBenefitsSection() {
 
                       <a
                         href="#contact"
-                        className="inline-flex items-center gap-1.5 text-gold text-sm font-medium hover:gap-2 transition-all duration-300"
+                        className="inline-flex items-center gap-2 text-gold text-base md:text-lg font-medium hover:gap-3 transition-all duration-300"
                       >
                         Learn More
-                        <ArrowRight className="w-3.5 h-3.5" />
+                        <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                       </a>
                     </div>
                   </motion.div>
@@ -577,35 +577,35 @@ export function DealerBenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-5 py-6 border-t border-b border-gold/20 mb-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 py-8 border-t border-b border-gold/20 mb-14 md:mb-16"
         >
           <div className="text-center">
-            <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
-              <Users className="w-6 h-6 text-gold" />
+            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
+              <Users className="w-7 h-7 text-gold" />
             </div>
-            <div className="text-3xl font-bold text-gold">250+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Active Dealers</div>
+            <div className="text-4xl font-bold text-gold">250+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Active Dealers</div>
           </div>
           <div className="text-center">
-            <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
-              <Globe className="w-6 h-6 text-gold" />
+            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
+              <Globe className="w-7 h-7 text-gold" />
             </div>
-            <div className="text-3xl font-bold text-gold">200+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Cities Covered</div>
+            <div className="text-4xl font-bold text-gold">200+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Cities Covered</div>
           </div>
           <div className="text-center">
-            <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
-              <TrendingUp className="w-6 h-6 text-gold" />
+            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
+              <TrendingUp className="w-7 h-7 text-gold" />
             </div>
-            <div className="text-3xl font-bold text-gold">₹100Cr+</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Annual Revenue</div>
+            <div className="text-4xl font-bold text-gold">₹100Cr+</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Annual Revenue</div>
           </div>
           <div className="text-center">
-            <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
-              <Heart className="w-6 h-6 text-gold" />
+            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-2">
+              <Heart className="w-7 h-7 text-gold" />
             </div>
-            <div className="text-3xl font-bold text-gold">98%</div>
-            <div className="text-cream/50 text-xs uppercase tracking-wider mt-1">Renewal Rate</div>
+            <div className="text-4xl font-bold text-gold">98%</div>
+            <div className="text-cream/50 text-sm uppercase tracking-wider mt-1">Renewal Rate</div>
           </div>
         </motion.div>
 
@@ -617,26 +617,26 @@ export function DealerBenefitsSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-gold/10 to-amber-500/10 rounded-xl p-6 border border-gold/20">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-gold/10 to-amber-500/10 rounded-2xl p-6 md:p-8 border border-gold/20">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <div className="text-left">
-                <h3 className="text-cream text-2xl font-display mb-1">Ready to Grow Together?</h3>
-                <p className="text-cream/50 text-sm">Join 250+ successful dealers across India</p>
+                <h3 className="text-cream text-2xl md:text-3xl font-display mb-1">Ready to Grow Together?</h3>
+                <p className="text-cream/50 text-base md:text-lg">Join 250+ successful dealers across India</p>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 <a
                   href="#contact"
-                  className="group inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-forest-deep font-semibold rounded-lg hover:bg-amber-500 transition-all duration-300 text-sm"
+                  className="group inline-flex items-center gap-3 px-8 py-3.5 bg-gold text-forest-deep font-semibold rounded-xl hover:bg-amber-500 transition-all duration-300 text-base md:text-lg"
                 >
                   Apply for Dealership
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
                   href="#catalogue"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 border border-gold/30 text-gold rounded-lg hover:bg-gold/10 transition-all duration-300 text-sm"
+                  className="inline-flex items-center gap-3 px-8 py-3.5 border-2 border-gold/30 text-gold rounded-xl hover:bg-gold/10 transition-all duration-300 text-base md:text-lg"
                 >
                   Download Brochure
-                  <Heart className="w-4 h-4" />
+                  <Heart className="w-5 h-5" />
                 </a>
               </div>
             </div>

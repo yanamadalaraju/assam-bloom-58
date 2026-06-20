@@ -147,7 +147,7 @@
               
 //               <div className="space-y-4">
 //                 {[
-//                   { Icon: Mail, label: "Email", value: "hello@rkTeasales.com", href: "mailto:hello@rkTeasales.com" },
+//                   { Icon: Mail, label: "Email", value: " surendra.agarwal@gmail.com", href: "mailto: surendra.agarwal@gmail.com" },
 //                   { Icon: Phone, label: "Call", value: "+91 99999 99999", href: "tel:+919999999999" },
 //                   { Icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919999999999" },
 //                   { Icon: MapPin, label: "Visit", value: "Dibrugarh, Assam, India" },
@@ -786,7 +786,7 @@
               
 //               <div className="space-y-4">
 //                 {[
-//                   { Icon: Mail, label: "Email", value: "hello@rkTeasales.com", href: "mailto:hello@rkTeasales.com" },
+//                   { Icon: Mail, label: "Email", value: " surendra.agarwal@gmail.com", href: "mailto: surendra.agarwal@gmail.com" },
 //                   { Icon: Phone, label: "Call", value: "+91 99999 99999", href: "tel:+919999999999" },
 //                   { Icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919999999999" },
 //                   { Icon: MapPin, label: "Visit", value: "Dibrugarh, Assam, India" },
@@ -1870,7 +1870,7 @@
               
 //               <div className="space-y-4">
 //                 {[
-//                   { Icon: Mail, label: "Email", value: "hello@rkTeasales.com", href: "mailto:hello@rkTeasales.com" },
+//                   { Icon: Mail, label: "Email", value: " surendra.agarwal@gmail.com", href: "mailto: surendra.agarwal@gmail.com" },
 //                   { Icon: Phone, label: "Call", value: "+91 99999 99999", href: "tel:+919999999999" },
 //                   { Icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919999999999" },
 //                   { Icon: MapPin, label: "Visit", value: "Dibrugarh, Assam, India" },
@@ -3149,7 +3149,7 @@
               
 //               <div className="space-y-4">
 //                 {[
-//                   { Icon: Mail, label: "Email", value: "hello@rkTeasales.com", href: "mailto:hello@rkTeasales.com" },
+//                   { Icon: Mail, label: "Email", value: " surendra.agarwal@gmail.com", href: "mailto: surendra.agarwal@gmail.com" },
 //                   { Icon: Phone, label: "Call", value: "+91 99999 99999", href: "tel:+919999999999" },
 //                   { Icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919999999999" },
 //                   { Icon: MapPin, label: "Visit", value: "Dibrugarh, Assam, India" },
@@ -4013,7 +4013,7 @@
 
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Send, MessageCircle, Instagram, Facebook, Linkedin, Users, Package, User, Building2, Calendar, Truck, FileText, CheckCircle, Sparkles, Leaf, ThumbsUp, Clock, Award, Crown, Globe, BadgeDollarSign, Shield, Star, HelpCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle, Instagram, Facebook, Linkedin, Users, Package, User, Building2, Calendar, Truck, FileText, CheckCircle, Sparkles, Leaf, ThumbsUp, Clock, Award, Crown, Globe, BadgeDollarSign, Shield, Star, HelpCircle, Youtube } from "lucide-react";
 import { TeaParticles } from "./TeaParticles";
 import { useState } from "react";
 
@@ -4241,7 +4241,7 @@ export function Contact() {
               
               <div className="space-y-4">
                 {[
-                  { Icon: Mail, label: "Email", value: "hello@rkTeasales.com", href: "mailto:hello@rkTeasales.com" },
+                  { Icon: Mail, label: "Email", value: "surendra.agarwal@gmail.com", href: "mailto:surendra.agarwal@gmail.com" },
                   { Icon: Phone, label: "Call", value: "98490 23900", href: "tel:+919849023900" },
                   { Icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919849023900" },
                   { Icon: MapPin, label: "Visit", value: "Hyderabad, India" },
@@ -4274,7 +4274,7 @@ export function Contact() {
                 {[
                   { Icon: Instagram, link: "https://www.instagram.com/adyaagoldTea?igsh=bm50ZWsxMWowOGp3", label: "Instagram", color: "hover:bg-pink-500" },
                   { Icon: Facebook, link: "https://www.facebook.com/profile.php?id=61572091612170", label: "Facebook", color: "hover:bg-blue-600" },
-                  { Icon: Linkedin, link: "https://linkedin.com", label: "LinkedIn", color: "hover:bg-blue-700" }
+                  { Icon: Youtube, link: "https://www.youtube.com/@adyaagoldTea", label: "youtube", color: "hover:bg-red-700" }
                 ].map(({ Icon, link, label, color }, i) => (
                   <a 
                     key={i} 
