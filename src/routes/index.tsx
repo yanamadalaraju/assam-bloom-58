@@ -20,6 +20,8 @@ import { SourcingCertificationsSection } from "@/components/SourcingCertificatio
 import VideoShowcaseSection from "@/components/VideoShowcaseSection";
 import { SubscriptionSection } from "@/components/SubscriptionSection";
 import { MapSection } from "@/components/MapSection";
+import MOQPricingSection from "@/components/MOQPricingSection";
+import FAQSection from "@/components/FAQSection";
 
 
 export const Route = createFileRoute("/")({
@@ -61,8 +63,11 @@ function Index() {
       <SubscriptionSection />
       <TestimonialsSection />
       <Blog />
-
+      
+      <FAQSection />
       <Contact />
+    
+      <MOQPricingSection />
       <MapSection />
       <Footer />
       <OffersPopup />
