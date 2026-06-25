@@ -106,7 +106,7 @@
 //                     <span className="font-display text-xs uppercase tracking-[0.35em] text-gold">From Leaf to Cup</span>
 //                   </div>
 //                   <h3 className="font-display text-3xl text-cream leading-tight mb-6">
-//                     The <span className="italic text-gradient-gold">tea-making</span> journey
+//                     The <span className="italic text-gradient-gold">Tea-making</span> journey
 //                   </h3>
 //                   <div className="space-y-1">
 //                     {steps.map((s, i) => (
@@ -210,10 +210,10 @@ import firingVideo from "@/assets/15862771_1920_1080_30fps.mp4";
 
 // Or if you have them named differently, adjust accordingly
 // If you don't have the videos yet, you can use these placeholder imports
-// import video1 from "@/assets/tea-process-1.mp4";
-// import video2 from "@/assets/tea-process-2.mp4";
-// import video3 from "@/assets/tea-process-3.mp4";
-// import video4 from "@/assets/tea-process-4.mp4";
+// import video1 from "@/assets/Tea-process-1.mp4";
+// import video2 from "@/assets/Tea-process-2.mp4";
+// import video3 from "@/assets/Tea-process-3.mp4";
+// import video4 from "@/assets/Tea-process-4.mp4";
 
 const steps = [
   {
@@ -338,7 +338,7 @@ export function ProcessPopup() {
                     <span className="font-display text-xs uppercase tracking-[0.35em] text-gold">From Leaf to Cup</span>
                   </div>
                   <h3 className="font-display text-3xl text-cream leading-tight mb-6">
-                    The <span className="italic text-gradient-gold">tea-making</span> journey
+                    The <span className="italic text-gradient-gold">Tea-making</span> journey
                   </h3>
                   <div className="space-y-1">
                     {steps.map((s, i) => (

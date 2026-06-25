@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 const benefits = [
-  { icon: Award, title: "Premium Products", text: "Access to India's finest Assam tea at competitive wholesale rates." },
+  { icon: Award, title: "Premium Products", text: "Access to India's finest Assam Tea at competitive wholesale rates." },
   { icon: Truck, title: "Pan India Delivery", text: "Fast and reliable logistics network across all major cities." },
   { icon: Shield, title: "100% Quality Assured", text: "FSSAI certified products with consistent quality standards." },
   { icon: TrendingUp, title: "High Margins", text: "Attractive profit margins and volume-based discounts." },
@@ -123,7 +123,7 @@ export function DistributorSection() {
           </h2>
           
           <p className="text-cream/70 text-base md:text-lg">
-            Partner with India's most trusted Assam tea exporter. Grow your business with premium quality products and exceptional support.
+            Partner with India's most trusted Assam Tea exporter. Grow your business with premium quality products and exceptional support.
           </p>
         </motion.div>
 
@@ -229,7 +229,7 @@ export function DistributorSection() {
           >
             <div className="mb-6">
               <h3 className="text-cream text-2xl font-display mb-2">Apply for Distributorship</h3>
-              <p className="text-cream/60 text-sm">Fill out the form and our team will get back to you within 24 hours.</p>
+              <p className="text-cream/60 text-sm">Fill out the form and our Team will get back to you within 24 hours.</p>
             </div>
 
             {isSubmitted ? (
@@ -242,7 +242,7 @@ export function DistributorSection() {
                   <CheckCircle className="w-8 h-8 text-gold" />
                 </div>
                 <h4 className="text-cream text-xl font-semibold mb-2">Application Submitted!</h4>
-                <p className="text-cream/60 text-sm">Thank you for your interest. Our team will contact you shortly.</p>
+                <p className="text-cream/60 text-sm">Thank you for your interest. Our Team will contact you shortly.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">

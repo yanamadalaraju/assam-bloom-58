@@ -15,15 +15,20 @@ import { CatalogueSection } from "@/components/CatalogueSection";
 import { DealerBenefitsSection } from "@/components/DealerBenefitsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import JourneySection from "@/components/JourneySection";
+import { WhyRKTeaSection } from "@/components/WhyRKTeaSection";
+import { SourcingCertificationsSection } from "@/components/SourcingCertificationsSection";
+import VideoShowcaseSection from "@/components/VideoShowcaseSection";
+import { SubscriptionSection } from "@/components/SubscriptionSection";
+import { MapSection } from "@/components/MapSection";
 
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "R K Tea Sales — Premium Assam Tea Exports & Wholesale" },
-      { name: "description", content: "Luxury Assam tea sourced directly from the gardens of Northeast India. Premium CTC, Orthodox, Green & custom export blends for wholesale buyers worldwide." },
+      { name: "description", content: "Luxury Assam Tea sourced directly from the gardens of Northeast India. Premium CTC, Orthodox, Green & custom export blends for wholesale buyers worldwide." },
       { property: "og:title", content: "R K Tea Sales — Premium Assam Tea" },
-      { property: "og:description", content: "Premium Assam tea exports & wholesale. From the gardens of Northeast India to discerning buyers worldwide." },
+      { property: "og:description", content: "Premium Assam Tea exports & wholesale. From the gardens of Northeast India to discerning buyers worldwide." },
       { property: "og:type", content: "website" },
     ],
     links: [
@@ -40,17 +45,25 @@ function Index() {
     <main className="bg-cream text-foreground overflow-x-hidden font-display">
       <Navbar />
       <Hero />
+   
       <About />
+      
       <Products />
       <JourneySection />
+      {/* <VideoShowcaseSection /> */}
+      <WhyRKTeaSection />
       <BulkOrder />
       <ExportSection />
       {/* <DistributorSection /> */}
       {/* <CatalogueSection /> */}
       <DealerBenefitsSection />
+      <SourcingCertificationsSection />
+      <SubscriptionSection />
       <TestimonialsSection />
       <Blog />
+
       <Contact />
+      <MapSection />
       <Footer />
       <OffersPopup />
       <ProcessPopup />
