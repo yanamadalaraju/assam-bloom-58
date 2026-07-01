@@ -286,6 +286,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import aboutLeaves from "@/assets/about-leaves.jpg";
 import aboutEstate from "@/assets/about-estate.jpg";
+import { SEO } from "./SEO";
 
 const timeline = [
   { year: "1990", title: "Rooted in Assam", text: "Founded with a singular vision to share the world's finest Assam Tea.", icon: "🌱" },
@@ -300,6 +301,26 @@ export function About() {
   const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   return (
+    <>
+    <SEO
+        title="About R K Tea Sales — Assam Tea Since 1990"
+        description="Learn about R K Tea Sales' journey since 1990. Direct sourcing from Assam Tea gardens, premium quality, and trusted by 250+ dealers worldwide."
+        keywords={[
+          'About R K Tea',
+          'Assam Tea history',
+          'Tea sourcing',
+          'Tea exporter India'
+        ]}
+        image="https://rkTeasales.com/about-og-image.jpg"
+        type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About R K Tea Sales",
+          "description": "Founded in 1990, R K Tea Sales is a premier exporter of authentic Assam Tea."
+        }}
+      />
+   
     <section id="about" ref={ref} className="relative bg-gradient-to-br from-cream via-cream to-amber-50/30 py-16 md:py-24 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -458,5 +479,6 @@ export function About() {
         </svg>
       </div>
     </section>
+     </>
   );
 }

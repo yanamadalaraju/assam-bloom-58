@@ -4016,6 +4016,7 @@ import { useState } from "react";
 import tPremium from "@/assets/product1.png";
 import tRoyal from "@/assets/product2.png";
 import tEconomic from "@/assets/product3.png";
+import { SEO } from "./SEO";
 
 // Define types
 interface Review {
@@ -4384,6 +4385,21 @@ export function Products() {
 
   return (
     <>
+     <SEO
+        title="Premium Assam Tea Products — Wholesale & Export"
+        description="Explore our premium range of Assam Tea including Royal Assam, Premium CTC, Green Tea, and Bulk Institutional packs. Wholesale pricing available."
+        keywords={[
+          'Assam Tea products',
+          'Premium Tea',
+          'CTC Tea',
+          'Green Tea',
+          'Bulk Tea',
+          'Tea wholesale',
+          'Tea export'
+        ]}
+        image="https://rkTeasales.com/products-og-image.jpg"
+        type="website"
+      />
       <section id="products" className="relative bg-gradient-to-br from-forest-deep via-forest-deep to-forest py-20 md:py-24 overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">

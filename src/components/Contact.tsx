@@ -4016,6 +4016,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Send, MessageCircle, Instagram, Facebook, Linkedin, Users, Package, User, Building2, Calendar, Truck, FileText, CheckCircle, Sparkles, Leaf, ThumbsUp, Clock, Award, Crown, Globe, BadgeDollarSign, Shield, Star, HelpCircle, Youtube } from "lucide-react";
 import { TeaParticles } from "./TeaParticles";
 import { useState } from "react";
+import { SEO } from "./SEO";
 
 type FormType = "contact" | "distributor" | "super-stockist" | "dealer" | "export";
 
@@ -4182,6 +4183,20 @@ export function Contact() {
   );
 
   return (
+    <>
+      <SEO
+        title="Contact R K Tea Sales — Get Premium Assam Tea Quote"
+        description="Contact R K Tea Sales for premium Assam Tea wholesale, export, and dealer inquiries. Get a custom quote for bulk orders."
+        keywords={[
+          'Contact Tea exporter',
+          'Assam Tea quote',
+          'Bulk Tea order',
+          'Tea dealer inquiry'
+        ]}
+        image="https://rkTeasales.com/contact-og-image.jpg"
+        type="website"
+      />
+   
     <section id="contact" className="relative bg-gradient-to-br from-forest-deep via-forest to-forest-deep py-10 md:py-8 overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0">
@@ -5035,12 +5050,13 @@ export function Contact() {
         <MessageCircle className="h-6 w-6 group-hover:rotate-12 transition-transform" />
       </a>
 
-      <style jsx>{`
+      <style>{`
         .rotate-y-180 {
           transform: rotateY(180deg);
         }
       `}</style>
     </section>
+     </>
   );
 }
 

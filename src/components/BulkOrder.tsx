@@ -727,6 +727,7 @@ import {
 } from "lucide-react";
 import { TeaParticles } from "./TeaParticles";
 import bulkBg from "@/assets/assamgarden1.jpg";
+import { SEO } from "./SEO";
 
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const [val, setVal] = useState(0);
@@ -816,6 +817,21 @@ export function BulkOrder() {
   const [activeCategory, setActiveCategory] = useState<string>("hotels");
 
   return (
+    <>
+     <SEO
+        title="Bulk Assam Tea Orders — Wholesale Pricing & Export"
+        description="Get special wholesale pricing for bulk Assam Tea orders. Perfect for hotels, restaurants, offices, and export. 250+ trusted dealers."
+        keywords={[
+          'Bulk Tea order',
+          'Wholesale Assam Tea',
+          'Tea for hotels',
+          'Tea for restaurants',
+          'Tea export bulk'
+        ]}
+        image="https://rkTeasales.com/bulk-og-image.jpg"
+        type="website"
+      />
+    
     <section id="bulk" className="relative py-16 md:py-20 overflow-hidden">
       {/* Background with visible image */}
       <div className="absolute inset-0">
@@ -1146,5 +1162,6 @@ export function BulkOrder() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }

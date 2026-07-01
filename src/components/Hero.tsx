@@ -463,6 +463,7 @@ import hero1 from "@/assets/cup.png";
 import hero2 from "@/assets/from the heart of assam.png";
 import hero3 from "@/assets/the taste of pure assam.png";
 import hero4 from "@/assets/Artboard 1.png";
+import { SEO } from "./SEO";
 
 const slides = [
   {
@@ -517,6 +518,29 @@ export function Hero() {
   const slide = slides[index];
 
   return (
+    < >
+     <SEO
+        title="Premium Assam Tea Exports & Wholesale"
+        description="Discover premium Assam Tea sourced directly from the gardens of Northeast India. Trusted exporter since 1990 with 250+ dealers worldwide."
+        keywords={['Assam Tea', 'Premium Tea', 'Tea Export', 'Wholesale Tea', 'R K Tea']}
+        image="https://rkTeasales.com/hero-og-image.jpg"
+        type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "R K Tea Sales",
+          "description": "Premium Assam Tea Exports & Wholesale since 1990",
+          "url": "https://rkTeasales.com",
+          "logo": "https://rkTeasales.com/logo.png",
+          "foundingDate": "1990",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hyderabad",
+            "addressCountry": "India"
+          }
+        }}
+      />
+  
     <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-forest-deep">
       <AnimatePresence mode="sync">
         <motion.div
@@ -653,5 +677,6 @@ export function Hero() {
         <ChevronDown className="h-4 w-4 md:h-5 md:w-5" />
       </motion.div>
     </section>
+      </>
   );
 }
